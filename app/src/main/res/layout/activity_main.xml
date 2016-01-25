@@ -1,0 +1,868 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/container_toolbar"
+        android:background="#f1f1f1"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/layout_table_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <!-- Row Title -->
+
+            <LinearLayout
+                android:id="@+id/layout_table_one_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_table_one"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/table_title" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/left_column"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+
+                            android:layout_width="52dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border_lines"
+                            android:orientation="vertical"
+
+                            >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="@string/title_student" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="@string/title_student_1" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="@string/title_student_2" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="@string/title_student_3" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="@string/title_student_4" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+
+                                android:text="@string/result" />
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0"
+
+                                />
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/right_column"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:id="@+id/title_layout_row1"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:background="@drawable/border_lines"
+
+
+                            >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="@string/title_skill" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/title_layout_row2"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:background="@drawable/border_lines"
+                            android:orientation="horizontal"
+                            android:weightSum="4"
+
+
+                            >
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="@string/skill_1" />
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="@string/skill_2" />
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="@string/skill_3" />
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="@string/skill_4" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/title_layout_row3"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/border_lines"
+                            android:orientation="horizontal"
+                            android:weightSum="4"
+
+                            >
+
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/title_layout_row4"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/border_lines"
+                            android:orientation="horizontal"
+                            android:weightSum="4"
+
+                            >
+
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/title_layout_row5"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/border_lines"
+                            android:orientation="horizontal"
+                            android:weightSum="4"
+
+                            >
+
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/title_layout_row6"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/border_lines"
+                            android:orientation="horizontal"
+                            android:weightSum="4"
+
+                            >
+
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Row Title 2-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/title_team_group" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView2"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/right_column_s6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:id="@+id/title_layout_row"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/border_lines"
+                            android:orientation="horizontal"
+                            android:weightSum="6"
+
+                            >
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="@string/team_1" />
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="@string/team_2" />
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="@string/team_3" />
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="@string/team_4" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="@string/team_5" />
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="@string/team_6" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/et_layout_row"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/border_lines"
+                            android:orientation="horizontal"
+                            android:weightSum="6"
+
+                            >
+
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/et_layout_row_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/border_lines"
+                            android:orientation="horizontal"
+                            android:weightSum="6"
+
+                            >
+
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/et_layout_row_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/border_lines"
+                            android:orientation="horizontal"
+                            android:weightSum="6"
+
+                            >
+
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/et_layout_row_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/border_lines"
+                            android:orientation="horizontal"
+                            android:weightSum="6"
+
+                            >
+
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/et_layout_row_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/border_lines"
+                            android:orientation="horizontal"
+                            android:weightSum="6"
+
+                            >
+
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_lines"
+                                android:gravity="center"
+                                android:text="0" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

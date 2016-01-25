@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">LinearLayoutTablewithScrollView</string>
+    <string name="table_title">Star Wars School</string>
+    <string name="title_team_group">Team</string>
+    <string name="title_student">Name</string>
+    <string name="title_student_1">Hans</string>
+    <string name="title_student_2">Luke</string>
+    <string name="title_student_3">Vader</string>
+    <string name="title_student_4">Chewbacca</string>
+    <string name="result">Result</string>
+    <string name="title_skill">Skill</string>
+    <string name="skill_1">Speech</string>
+    <string name="skill_2">Guns</string>
+    <string name="skill_3">Lightsaber</string>
+    <string name="skill_4">Pilot</string>
+    <string name="team_1">Jedi</string>
+    <string name="team_2">Rebel Alliance’s</string>
+    <string name="team_3">Democracy</string>
+    <string name="team_4">The Republicans</string>
+    <string name="team_5">Death Squadron"</string>
+    <string name="team_6">The Imperial</string>
+</resources>
